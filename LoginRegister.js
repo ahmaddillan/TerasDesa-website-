@@ -4,11 +4,11 @@ function togglePassword(inputId, icon) {
 
   if (isHidden) {
     passwordInput.type = "text";
-    icon.src = "assets/show.png";
+    icon.src = "assets-LoginRegister/show.png";
     icon.alt = "Hide Password";
   } else {
     passwordInput.type = "password";
-    icon.src = "assets/hide.png";
+    icon.src = "assets-LoginRegister/hide.png";
     icon.alt = "Show Password";
   }
 

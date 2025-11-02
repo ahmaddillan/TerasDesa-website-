@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketplace</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="marketplaceStyle.css">
 </head>
 <body>
 
@@ -19,9 +19,9 @@
     </div>
 
     <div class="navbar-right">
-      <a href="#" class="nav-link">Beranda</a>
-      <a href="#" class="nav-link">Marketplace</a>
-      <a href="#" class="nav-link">Aset Desa</a>
+      <a href="homepage.html" class="nav-link">Beranda</a>
+      <a href="marketplace.html" class="nav-link">Marketplace</a>
+      <a href="aset.html" class="nav-link">Aset Desa</a>
       <a href="#" class="nav-link">Pembangunan</a>
     </div>
   </header>
@@ -40,14 +40,15 @@
   <!-- PRODUK GRID -->
   <main class="product-section">
     <div class="product-grid" id="productList">
-
+      <a href="DetailProduk.html">
       <div class="product-card">
-        <img src="gambar/beras.jpeg" alt="Produk 1">
-        <h3>Beras Sedap Wangi</h3>
-        <p class="price">Rp880.000</p>
+        <img src="aset-detailproduk/meja-belajar-kecil.jpg" alt="Produk 1">
+        <h3>Meja lesehan</h3>
+        <p class="price">Rp250.000</p>
         <p class="rating">⭐ 5.0 • 1 terjual</p>
         <p class="location">Kota Administrasi Jakarta Pusat</p>
       </div>
+      </a>
 
       <div class="product-card">
         <img src="gambar/ember.jpeg" alt="Produk 2">
@@ -123,6 +124,6 @@
 
     </div>
   </main>
-  <script src="script.js"></script>
+  <script src="marketplaceScript.js"></script>
 </body>
 </html>

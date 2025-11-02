@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register TerasDesa</title>
+  <link rel="stylesheet" href="LoginRegister.css">
+  <script src="LoginRegister.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <a href="login.html" class="back-arrow">←</a>
+      <h2>Sign up</h2>
+      <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Ahmad Dillan Ramadhan" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="DillanUsluk@gmail.com" required>
+
+        <label>Birth of date</label>
+        <input type="date" required>
+
+        <label>Phone Number</label>
+        <div class="phone-field">
+          <input type="tel" placeholder="0867211122" required>
+        </div>
+
+        <label>Set Password</label>
+        <div class="password-field">
+          <input type="password" id="registerPassword" required>
+          <img src="assets-LoginRegister/hide.png" alt="Show password" class="toggle" id="toggleIcon" onclick="togglePassword('registerPassword',this)">
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>

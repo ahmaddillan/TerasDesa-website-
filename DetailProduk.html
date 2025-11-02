@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk | Teras Desa</title>
+
+    <link rel="stylesheet" href="DetailProduk.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">🏠 Teras Desa</a>
+            <nav class="nav-links">
+                <a href="#">Beranda</a>
+                <a href="#" class="active">Marketplace</a>
+                <a href="#">Aset Desa</a>
+                <a href="#">Pembangunan</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="#">Beranda</a> / <span>Meja kayu lesehan</span>
+        </div>
+
+        <div class="product-detail">
+
+            <div class="product-image">
+                <img src="aset-detailproduk/meja-belajar-kecil.jpg" alt="meja-belajar-kecil">
+            </div>
+
+            <div class="product-info">
+                <h1>Meja kayu lesehan</h1>
+                <div class="harga">Rp250.000</div>
+
+                <div class="info-box penjual">
+                    <div>
+                        <p class="label">Penjual</p>
+                        <p class="nama-penjual">pengrajin Desa</p>
+                        <p class="lokasi-penjual">Desa Nagrak</p>
+                    </div>
+                    <button class="tombol-ikuti">Ikuti</button>
+                </div>
+
+                <div class="info-box">
+                    <p class="label">Pengiriman</p>
+                    <p>2-3 hari</p>
+                </div>
+                <div class="info-box">
+                    <p class="label">Garansi</p>
+                    <p>Garansi kualitas pengerjaan</p>
+                </div>
+
+                <div class="atur-jumlah">
+                    <label>Atur jumlah dan catatan</label>
+                    <div class="quantity-control">
+                        <button id="btn-kurang">-</button>
+                        <input type="text" value="1" id="input-jumlah">
+                        <button id="btn-tambah">+</button>
+                    </div>
+                    <span class="info-stok">Stok: 100+ tersedia</span>
+                </div>
+
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p class="harga-subtotal">Rp150.000</p>
+                </div>
+                
+                <div class="tombol-aksi">
+                    <button class="btn btn-keranjang">+ Keranjang</button>
+                    <button class="btn btn-beli">Beli Langsung</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2025 Teras Desa</p>
+    </footer>
+
+    <script src="DetailProduk.js"></script>
+
+</body>
+</html>

@@ -13,6 +13,14 @@ body {
     padding: 0 20px;
 }
 
+.cart-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  align-content: right;
+}
+
 /*  STYLE NAVBAR  */
 .navbar {
     background-color: #5A7A44;

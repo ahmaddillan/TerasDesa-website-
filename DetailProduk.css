@@ -1,0 +1,243 @@
+/* Pengaturan Dasar & Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Wadah utama agar konten tidak terlalu lebar dan berada di tengah */
+.container {
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+/*  STYLE NAVBAR  */
+.navbar {
+    background-color: #5A7A44;
+    padding: 15px 0;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Mengatur isi navbar agar sejajar */
+.navbar .container {
+    display: flex;
+    justify-content: space-between; /* Logo di kiri, link di kanan */
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    opacity: 1;
+    font-weight: 600;
+}
+
+/*  STYLE KONTEN UTAMA */
+.breadcrumb {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+.breadcrumb a {
+    color: #5A7A44;
+    text-decoration: none;
+}
+
+/* Layout utama produk: 2 kolom */
+.product-detail {
+    display: flex; /* Mengaktifkan flexbox */
+    gap: 40px; /* Jarak antara kolom gambar dan info */
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Kolom Kiri: Gambar */
+.product-image {
+    flex: 1; /* Mengambil 1 bagian dari ruang yang tersedia */
+}
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+/* Kolom Kanan: Info */
+.product-info {
+    flex: 1; /* Mengambil 1 bagian juga, jadi lebarnya sama */
+}
+
+.product-info h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.harga {
+    font-size: 32px;
+    font-weight: bold;
+    color: #E69500;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk kotak-kotak info */
+.info-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.info-box .label {
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 5px 0;
+}
+.info-box p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.penjual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nama-penjual { font-size: 16px; }
+.lokasi-penjual { font-size: 14px; color: #555; font-weight: 400; }
+
+.tombol-ikuti {
+    background-color: #5A7A44;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pengatur Jumlah */
+.atur-jumlah label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: fit-content; /* Lebar menyesuaikan isi */
+    border-radius: 5px;
+}
+.quantity-control button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    cursor: pointer;
+}
+.quantity-control input {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info-stok {
+    font-size: 13px;
+    color: #777;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+/* Subtotal */
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+.subtotal p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.harga-subtotal {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E69500;
+}
+
+/* Tombol Aksi (Beli & Keranjang) */
+.tombol-aksi {
+    display: flex;
+    gap: 15px; /* Jarak antar tombol */
+    margin-top: 20px;
+}
+.btn {
+    flex: 1; /* Biar kedua tombol lebarnya sama */
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #5A7A44;
+}
+
+.btn-keranjang {
+    background-color: #f0f5eb;
+    color: #5A7A44;
+}
+
+.btn-beli {
+    background-color: #5A7A44;
+    color: white;
+}
+
+/*  STYLE FOOTER*/
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #aaa;
+}
+
+/*RESPONSIVE untuk HP */
+/* Jika lebar layar 768px atau kurang */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column; /* Ubah layout jadi ke bawah */
+    }
+    
+    .tombol-aksi {
+        flex-direction: column; /* Tombol juga jadi ke bawah */
+    }
+
+    .product-info h1 {
+        font-size: 22px;
+    }
+}

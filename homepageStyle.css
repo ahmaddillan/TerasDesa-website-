@@ -1,0 +1,277 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333333; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* class membersihkan float*/
+.clearfix {
+    clear: both;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+    color: #555555;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+.header {
+    background: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a6b36;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block; /* menjajarkan menu secara horizontal */
+    margin-left: 30px;
+}
+
+.nav a {
+    color: #555555;
+    font-weight: 600;
+}
+
+.nav a.active,
+.nav a:hover {
+    color: #4a6b36; 
+}
+
+
+/* bagianAtas */
+.bagianAtas {
+    background-color: #4a6b36; 
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.bagianAtas-text {
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.bagianAtas-text p {
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.bagianAtas-image {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.bagianAtas-image-box {
+    background: #7cab56;
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+}
+
+.bagianAtas-image-box .tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f39c12; 
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.bagianAtas-image-box .icon {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+
+/* buttons*/
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btn-orange {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+.btn-orange:hover {
+    background-color: #e67e22; 
+}
+
+.btn-green-outline {
+    border: 2px solid #7cab56;
+    color: #7cab56;
+}
+.btn-green-outline:hover {
+    background-color: #7cab56;
+    color: #ffffff;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+}
+.btn-white:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-white-outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.btn-white-outline:hover {
+    background-color: #ffffff;
+    color: #4a6b36;
+}
+
+
+/* fitur utama*/
+.features {
+    padding: 80px 0 60px 0;
+    /* Background sudah di body */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: #4a6b36; 
+    margin-bottom: 10px;
+}
+.section-title p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Wrapper untuk 3 kotak */
+.features-wrapper {
+    margin: 0 -15px; 
+}
+
+.feature-box {
+    float: left;
+    width: 33.333%;
+    padding: 0 15px; 
+}
+
+/* ini adalah style di dalam kotaknya */
+.feature-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 22px;
+    color: #4a6b36;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    color: #f39c12;
+    font-weight: 600;
+}
+.card-link:hover {
+    color: #e67e22;
+}
+
+/* statistik */
+.stats {
+    padding: 40px 0 80px 0;
+    /* Background sudah di body */
+    text-align: center;
+}
+
+.stat-item {
+    float: left;
+    width: 25%;
+}
+
+.stat-item .number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #4a6b36;
+}
+
+.stat-item .label {
+    font-size: 16px;
+    color: #555555;
+}
+
+/*cta bawah*/
+.cta {
+    background-color: #4a6b36;
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    opacity: 0.9;
+    color: #ffffff;
+}

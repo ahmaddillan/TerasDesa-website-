@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TerasDesa - Data Aset</title>
+    <link rel="stylesheet" href="asetStyle.css" />
+  </head>
+  <body onload="cekKetersediaan()">
+
+    <div class="navbar">
+      <div class="logo">TerasDesa</div>
+        <div class="nav-links">
+            <a href="homepage.html" class="nav-item">Beranda</a>
+            <a href="#" class="nav-item">Marketplace</a>
+            <a href="#" class="nav-item active">Aset Desa</a>
+            <a href="#" class="nav-item">Pembangunan</a>
+        </div>
+    </div>
+
+    <div class="judul-container">
+        <h1>Data Aset Desa</h1>
+        <input type="text" class="search-bar" placeholder="Cari aset di sini...">
+    </div>
+
+    <div class="card-container">
+      <div class="card" data-status="tersedia">
+        <img src="gambarAset/balai-desa.png" alt="Balai Desa" />
+        <h3>Balai Desa</h3>
+        <p>Kapasitas: 150 orang</p>
+        <p>Lokasi: Pusat Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+
+      <div class="card" data-status="tersedia">
+        <img src="gambarAset/aula.webp" alt="aula" />
+        <h3>Aula</h3>
+        <p>Kapasitas: 50 orang</p>
+        <p>Lokasi: Kantor Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+
+      <div class="card" data-status="tidak-tersedia">
+        <img src="gambarAset/mobil-siaga.jpg" alt="mobil-siaga" />
+        <h3>Mobil siaga</h3>
+        <p>Lokasi: Kantor Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+
+      <div class="card" data-status="tersedia">
+        <img src="gambarAset/KURSI_PESTA.jpg" alt="kursi" />
+        <h3>Kursi</h3>
+        <p>Lokasi: Kantor Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+
+      <div class="card" data-status="tersedia">
+        <img src="gambarAset/tenda.webp" alt="tenda" />
+        <h3>Tenda</h3>
+        <p>Lokasi: Kantor Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+
+      <div class="card" data-status="tersedia">
+        <img src="gambarAset/keranda.jpg" alt="keranda" />
+        <h3>Keranda</h3>
+        <p>Lokasi: Kantor Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+
+      <div class="card" data-status="tidak-tersedia">
+        <img src="gambarAset/speaker.jpeg" alt="sound-system" />
+        <h3>Sound System</h3>
+        <p>Lokasi: Kantor Desa</p>
+        <button class="cek-ketersediaan">Cek Ketersediaan</button>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h3 id="popup-title"></h3>
+        <p id="popup-text"></p>
+        <button id="popup-close">Tutup</button>
+      </div>
+    </div>
+
+    <script src="asetScript.js"></script>
+  </body>
+</html>

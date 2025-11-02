@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login TerasDesa</title>
+    <link rel="stylesheet" href="LoginRegister.css">
+    <script src="LoginRegister.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Login</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="DillanUsluk@gmail.com" required>
+
+                <label>Password</label>
+                <div class="password-field">
+                    <input type="password" id="loginPassword" required>
+                    <img src="assets-LoginRegister/hide.png" alt="Show password" class="toggle" id="toggleIcon" onclick="togglePassword('loginPassword',this)">
+                </div>
+
+                <button type="submit" onclick="login()" class="btn">Log In</button>
+            </form>
+
+            <div class="divider">Or</div>
+
+            <button class="btn-google"><img src="assets-LoginRegister/google.svg" alt="">Continue with Google</button>
+            <button class="btn-facebook"><img src="assets-LoginRegister/Facebook_icon.svg" alt="">Continue with Facebook</button>
+
+            <p class="signup-link">Don’t have an account? <a href="register.html">Sign up</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
